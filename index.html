@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="todo">
+    <header>
+      <h1>To-do list</h1>
+      <p id="progress" role="status"></p>
+    </header>
+
+    <form id="new-task">
+      <label for="task-name">New task</label>
+      <div class="task-input">
+        <input id="task-name" name="task" type="text" maxlength="160" autocomplete="off"
+          placeholder="What needs doing?" required>
+        <button type="submit">Add task</button>
+      </div>
+    </form>
+
+    <p id="empty">Your list is empty.</p>
+    <ul id="tasks" aria-label="Tasks"></ul>
+  </main>
+</body>
+</html>
